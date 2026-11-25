@@ -507,3 +507,6 @@
     padding:26px 22px 34px;
   }
 }
+
+/* Registro de socios oculto por ahora */
+.footer-account-cta[hidden],#accInline{display:none!important}
