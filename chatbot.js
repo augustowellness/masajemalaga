@@ -79,7 +79,7 @@
       waMsgGeneral: 'Hola, tengo una consulta sobre vuestros quiromasajes',
       minutes: 'minutos',
       mVip: 'Eventos VIP y a domicilio',
-      vipTxt: 'Para eventos, villas, yates o Airbnbs tenemos un servicio a domicilio: llevamos camillas, aceites y todo lo necesario allá donde estés, en Marbella, Málaga, Torremolinos, Benalmádena y toda la Costa del Sol.\n\n✨ <b>Eventos Premium — desde 450 €</b>\nUno o varios terapeutas según el grupo, perfecto para bodas, celebraciones privadas o cualquier ocasión especial.',
+      vipTxt: 'Para eventos, villas, yates o Airbnbs tenemos un servicio a domicilio: llevamos camillas, aceites y todo lo necesario allá donde estés, en Marbella, Málaga, Torremolinos, Benalmádena y toda la Costa del Sol.\n\n✨ <b>Eventos Premium — desde 450 €</b>\nUno o varios quiromasajistas según el grupo, perfecto para bodas, celebraciones privadas o cualquier ocasión especial.',
       vipBtn: 'Ver todos los detalles',
       waMsgVip: 'Hola, quiero información sobre el evento de quiromasaje VIP Premium'
     },
