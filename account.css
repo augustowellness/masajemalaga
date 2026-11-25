@@ -1,0 +1,509 @@
+/* ============================================================
+   Cuenta de usuario Masajemalaga — estilos
+   Mismo lenguaje visual que chatbot.css: teal/gold/crema.
+   ============================================================ */
+
+/* Botón compacto en el nav (icono de persona) */
+.acc-nav-btn{
+  width:26px; height:26px;
+  border-radius:50%;
+  border:none;
+  background:#fff;
+  color:#163A36;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer;
+  flex-shrink:0;
+  padding:0;
+  box-shadow:0 2px 6px -1px rgba(0,0,0,.3);
+  transition:background .18s ease, transform .18s ease;
+}
+.acc-nav-btn:hover{background:#F3ECDA; transform:scale(1.08);}
+.acc-nav-btn svg{width:14px; height:14px;}
+/* En las landing pages las banderas bajan a 18px por debajo de 640px;
+   el icono de cuenta las acompaña manteniendo la proporción. */
+@media (max-width:640px){
+  .nav .acc-nav-btn{width:24px; height:24px;}
+  .nav .acc-nav-btn svg{width:13px; height:13px;}
+}
+/* En el nav clásico (landing pages, fondo claro) */
+.nav .acc-nav-btn{
+  border-color:var(--line, #E4DCC9);
+  background:transparent;
+  color:var(--ink, #1E2420);
+}
+.nav .acc-nav-btn:hover{background:rgba(0,0,0,.05);}
+.acc-nav-btn.is-logged{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#181c1a;
+}
+
+/* Overlay + modal, mismo patrón que el bono regalo */
+.acc-overlay{
+  position:fixed; inset:0;
+  background:rgba(15,20,18,.55);
+  z-index:80;
+  display:none;
+  align-items:flex-start;
+  justify-content:center;
+  padding:6vh 16px 40px;
+  overflow-y:auto;
+  /* Evita que el gesto de scroll "atraviese" el panel y arrastre la
+     web de fondo (el efecto de arrastre encadenado del móvil). */
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+}
+.acc-overlay.is-open{display:flex;}
+.acc-modal{
+  width:100%;
+  max-width:400px;
+  background:#FFFDF8;
+  border-radius:18px;
+  box-shadow:0 30px 70px -14px rgba(0,0,0,.5);
+  padding:30px 28px 26px;
+  position:relative;
+  font-family:'Jost', system-ui, sans-serif;
+  color:#1E2420;
+}
+.acc-close{
+  position:absolute; top:14px; right:14px;
+  width:30px; height:30px;
+  border:none; border-radius:50%;
+  background:#E5484D;
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer;
+  box-shadow:0 2px 6px -1px rgba(0,0,0,.35);
+  transition:background .18s ease, transform .18s ease;
+  z-index:2;
+}
+.acc-close:hover{background:#c93b40; transform:scale(1.08);}
+.acc-close svg{width:15px; height:15px;}
+
+.acc-modal h3{
+  font-family:'Cormorant Garamond', Georgia, serif;
+  font-size:24px;
+  font-weight:600;
+  margin:0 0 4px;
+  color:#163A36;
+}
+.acc-modal p.acc-sub{
+  margin:0 0 20px;
+  font-size:13.5px;
+  color:#6b6b66;
+  line-height:1.5;
+}
+
+.acc-field{margin-bottom:14px;}
+.acc-field label{
+  display:block;
+  font-size:12.5px;
+  font-weight:500;
+  color:#4a4a45;
+  margin-bottom:5px;
+}
+.acc-field input{
+  width:100%;
+  border:1px solid #E4DCC9;
+  border-radius:10px;
+  padding:11px 13px;
+  font-family:inherit;
+  font-size:14.5px;
+  color:#1E2420;
+  background:#fff;
+  outline:none;
+  box-sizing:border-box;
+}
+.acc-field input:focus{border-color:#A9873F;}
+
+.acc-btn-primary{
+  width:100%;
+  background:#163A36;
+  color:#F8F1DF;
+  border:none;
+  border-radius:100px;
+  padding:13px;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.02em;
+  cursor:pointer;
+  margin-top:4px;
+  transition:background .18s ease;
+}
+.acc-btn-primary:hover{background:#0f2a27;}
+.acc-btn-primary:disabled{opacity:.6; cursor:default;}
+
+.acc-btn-google{
+  width:100%;
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  background:#fff;
+  border:1px solid #E4DCC9;
+  border-radius:100px;
+  padding:11px;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:500;
+  color:#1E2420;
+  cursor:pointer;
+  margin-top:10px;
+}
+.acc-btn-google:hover{background:#F8F5EE;}
+.acc-btn-google svg{width:18px; height:18px; flex-shrink:0;}
+
+.acc-divider{
+  display:flex; align-items:center; gap:10px;
+  margin:16px 0;
+  font-size:11.5px;
+  color:#9a9a95;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.acc-divider::before, .acc-divider::after{
+  content:''; flex:1; height:1px; background:#E4DCC9;
+}
+
+.acc-switch{
+  text-align:center;
+  margin-top:16px;
+  font-size:13px;
+  color:#6b6b66;
+}
+.acc-switch button{
+  background:none; border:none; padding:0;
+  color:#A9873F; font-weight:600; cursor:pointer;
+  font-family:inherit; font-size:inherit;
+}
+.acc-switch button:hover{text-decoration:underline;}
+
+.acc-error{
+  background:#FBE9E7;
+  color:#9c3b34;
+  font-size:12.5px;
+  padding:9px 12px;
+  border-radius:8px;
+  margin-bottom:14px;
+  display:none;
+  line-height:1.4;
+}
+.acc-error.is-visible{display:block;}
+
+/* --- Panel de cuenta ya identificado --- */
+.acc-profile-head{
+  display:flex; align-items:center; gap:12px;
+  margin-bottom:18px;
+}
+.acc-avatar{
+  width:46px; height:46px;
+  border-radius:50%;
+  background:#163A36;
+  color:#F8F1DF;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond', serif;
+  font-size:19px;
+  font-weight:600;
+  flex-shrink:0;
+  overflow:hidden;
+}
+.acc-avatar img{width:100%; height:100%; object-fit:cover;}
+.acc-profile-name{font-weight:600; font-size:15.5px; line-height:1.25;}
+.acc-profile-email{font-size:12.5px; color:#8a8a85;}
+.acc-profile-uid{
+  font-size:10.5px;
+  color:#b0b0aa;
+  font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+  margin-top:2px;
+  word-break:break-all;
+  user-select:all;
+}
+
+.footer-account-cta{
+  display:block;
+  width:100%;
+  text-align:center;
+  color:var(--cream, #F8F1DF);
+  font-family:'Jost', sans-serif;
+  font-size:13px;
+  font-weight:500;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  margin-top:14px;
+  cursor:pointer;
+  background:none;
+  border:none;
+}
+.footer-account-cta:hover{color:var(--gold, #A9873F);}
+
+/* --- Panel de cuenta incrustado en el pie --- */
+.acc-inline{
+  max-width:var(--max, 1120px);
+  margin:26px auto 0;
+  padding:0 32px;
+}
+.acc-inline-card{
+  background:rgba(248,241,223,.07);
+  border:1px solid rgba(248,241,223,.14);
+  border-radius:14px;
+  padding:20px 22px;
+  max-width:440px;
+  margin:0 auto;
+  text-align:center;
+  color:var(--cream, #F8F1DF);
+  font-family:'Jost', sans-serif;
+}
+.acc-inline-head{
+  display:flex; align-items:center; justify-content:center;
+  gap:12px;
+  margin-bottom:16px;
+  text-align:left;
+}
+.acc-inline-name{font-weight:600; font-size:15px;}
+.acc-inline-mail{font-size:12.5px; color:rgba(248,241,223,.6);}
+.acc-inline-title{
+  font-size:12px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:rgba(248,241,223,.75);
+  margin-bottom:8px;
+}
+.acc-inline-sub{
+  font-size:13px;
+  line-height:1.5;
+  color:rgba(248,241,223,.7);
+  margin-bottom:14px;
+}
+.acc-inline-btn{
+  display:inline-block;
+  background:var(--gold, #A9873F);
+  color:#fff;
+  border:none;
+  border-radius:100px;
+  padding:11px 26px;
+  font-family:inherit;
+  font-size:13.5px;
+  font-weight:500;
+  cursor:pointer;
+  margin-top:12px;
+  transition:background .18s ease;
+}
+.acc-inline-btn:hover{background:#c2a15c;}
+/* Los bonos y promos reutilizan sus estilos, pero aquí van sobre fondo
+   oscuro: se ajustan los colores para que se lean bien. */
+.acc-inline .acc-package{
+  background:rgba(248,241,223,.09);
+  color:var(--cream, #F8F1DF);
+}
+.acc-inline .acc-package-count{color:rgba(248,241,223,.65);}
+.acc-inline .acc-history-empty{color:rgba(248,241,223,.6); padding:10px 0;}
+.acc-inline .acc-promo{margin-top:12px; margin-bottom:0; text-align:left;}
+@media (max-width:640px){
+  .acc-inline{padding:0 20px;}
+  .acc-inline-card{padding:18px 18px;}
+}
+
+.acc-loyalty{
+  background:#F3ECDA;
+  border-radius:12px;
+  padding:14px 16px;
+  margin-bottom:18px;
+}
+.acc-loyalty-count{
+  font-family:'Cormorant Garamond', serif;
+  font-size:26px;
+  font-weight:600;
+  color:#163A36;
+  line-height:1;
+}
+.acc-loyalty-label{
+  font-size:12px;
+  color:#7a7a74;
+  margin-top:3px;
+}
+.acc-loyalty-bar{
+  height:6px;
+  border-radius:100px;
+  background:#E4DCC9;
+  margin-top:10px;
+  overflow:hidden;
+}
+.acc-loyalty-bar-fill{
+  height:100%;
+  background:#A9873F;
+  border-radius:100px;
+  transition:width .4s ease;
+}
+.acc-loyalty-note{
+  font-size:12px;
+  color:#8a8a85;
+  margin-top:8px;
+  line-height:1.4;
+}
+
+.acc-history-title{
+  font-size:12.5px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#8a8a85;
+  margin:0 0 10px;
+}
+.acc-history-list{
+  display:flex; flex-direction:column; gap:8px;
+  max-height:220px;
+  overflow-y:auto;
+  margin-bottom:18px;
+}
+.acc-history-item{
+  display:flex; justify-content:space-between; align-items:center;
+  gap:10px;
+  background:#F8F5EE;
+  border-radius:10px;
+  padding:10px 12px;
+  font-size:13px;
+}
+.acc-history-item .who{font-weight:500;}
+.acc-history-item .when{color:#9a9a95; font-size:11.5px;}
+.acc-history-empty{
+  font-size:13px;
+  color:#9a9a95;
+  text-align:center;
+  padding:18px 0 22px;
+  line-height:1.5;
+}
+
+.acc-btn-secondary{
+  width:100%;
+  background:none;
+  border:1px solid #E4DCC9;
+  border-radius:100px;
+  padding:11px;
+  font-family:inherit;
+  font-size:13.5px;
+  color:#6b6b66;
+  cursor:pointer;
+}
+.acc-btn-secondary:hover{background:#F8F5EE;}
+
+/* --- Bonos --- */
+.acc-package{
+  background:#F8F5EE;
+  border-radius:10px;
+  padding:10px 12px;
+  margin-bottom:8px;
+}
+.acc-package-top{
+  display:flex; justify-content:space-between; align-items:center;
+  gap:10px;
+  font-size:13.5px;
+  margin-bottom:6px;
+}
+.acc-package-name{font-weight:500;}
+.acc-package-count{color:#8a8a85; font-size:12.5px; white-space:nowrap;}
+
+/* --- Promociones --- */
+.acc-promo{
+  background:linear-gradient(135deg, #163A36, #1f4b45);
+  color:#F8F1DF;
+  border-radius:12px;
+  padding:14px 16px;
+  margin-bottom:14px;
+}
+.acc-promo-tag{
+  display:inline-block;
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:#A9873F;
+  background:rgba(169,135,63,.18);
+  padding:3px 8px;
+  border-radius:100px;
+  margin-bottom:8px;
+}
+.acc-promo-title{
+  font-family:'Cormorant Garamond', serif;
+  font-size:18px;
+  font-weight:600;
+}
+.acc-promo-time{
+  font-size:12px;
+  color:rgba(248,241,223,.75);
+  margin-top:4px;
+}
+.acc-promo-btn{
+  display:block;
+  position:static;
+  text-align:center;
+  margin-top:12px;
+  background:#A9873F !important;
+}
+.acc-promo-btn:hover{background:#c2a15c !important;}
+
+/* --- Panel de administrador --- */
+.acc-admin-search-row{display:flex; gap:8px;}
+.acc-admin-search-row input{flex:1;}
+.acc-admin-search-row button{width:auto; white-space:nowrap; padding:0 16px;}
+.acc-sep{border:none; border-top:1px solid #E4DCC9; margin:20px 0;}
+.acc-admin-customer{
+  background:#F3ECDA;
+  border-radius:10px;
+  padding:12px 14px;
+  margin-bottom:12px;
+}
+.acc-admin-addpkg{
+  display:flex; gap:8px; flex-wrap:wrap;
+  margin:10px 0 18px;
+}
+.acc-admin-addpkg select{
+  flex:1; min-width:140px;
+  border:1px solid #E4DCC9; border-radius:10px;
+  padding:9px 10px; font-family:inherit; font-size:13px;
+  background:#fff;
+}
+.acc-admin-addpkg input{
+  width:90px;
+  border:1px solid #E4DCC9; border-radius:10px;
+  padding:9px 10px; font-family:inherit; font-size:13px;
+}
+.acc-promo-admin{background:#F3ECDA; color:#1E2420;}
+.acc-promo-admin .acc-promo-title{color:#163A36;}
+.acc-promo-admin .acc-promo-time{color:#7a7a74;}
+.acc-promo-form{
+  background:#F8F5EE;
+  border-radius:10px;
+  padding:12px;
+  margin:10px 0 18px;
+}
+.acc-promo-form input{
+  width:100%;
+  border:1px solid #E4DCC9; border-radius:10px;
+  padding:9px 11px; font-family:inherit; font-size:13px;
+  box-sizing:border-box;
+  margin-bottom:8px;
+}
+.acc-promo-form-row{display:flex; gap:8px;}
+.acc-promo-form-row input{margin-bottom:8px;}
+.acc-mini{width:auto !important; padding:8px 14px !important; font-size:12.5px !important; margin-top:6px;}
+.acc-package-actions{display:flex; gap:6px; margin-top:6px;}
+.acc-package-actions .acc-mini{margin-top:0;}
+.acc-mini-danger{color:#b04a44 !important; border-color:#e2c3bf !important;}
+.acc-mini-danger:hover{background:#FBE9E7 !important;}
+
+@media (max-width:480px){
+  /* En móvil el panel se pega abajo como una hoja, PERO usando
+     margin-top:auto en vez de align-items:flex-end. Con flex-end, si el
+     contenido era más alto que la pantalla, la parte de arriba quedaba
+     recortada y no se podía alcanzar ni haciendo scroll. */
+  .acc-overlay{
+    padding:0;
+    align-items:flex-start;
+  }
+  .acc-modal{
+    margin-top:auto;
+    min-height:min-content;
+    max-width:100%;
+    border-radius:20px 20px 0 0;
+    padding:26px 22px 34px;
+  }
+}

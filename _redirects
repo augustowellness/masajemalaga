@@ -1,0 +1,94 @@
+# Redirecciones 301: slugs antiguos (en español) -> slugs traducidos por idioma.
+# Se añadieron al traducir las URLs de las landing pages. NO borrar:
+# mantienen el posicionamiento de las URLs que Google ya tenía indexadas.
+
+# --- en ---
+/en/masaje-a-domicilio/*  /en/luxury-mobile-massage-costa-del-sol/  301
+/en/masaje-cerca-de-hoteles-malaga/*  /en/massage-near-hotels-malaga/  301
+/en/masaje-cerca-de-huelin/*  /en/massage-near-huelin-malaga/  301
+/en/masaje-cerca-de-malaga/*  /en/massage-near-malaga/  301
+/en/masaje-deportivo-malaga/*  /en/sports-massage-malaga/  301
+/en/masaje-en-pareja-malaga/*  /en/couples-massage-malaga/  301
+/en/masaje-recuperacion-vacaciones/*  /en/holiday-recovery-massage/  301
+/en/masaje-relajante-malaga/*  /en/relaxing-massage-malaga/  301
+/en/quiromasaje-costa-del-sol/*  /en/chiromassage-costa-del-sol/  301
+/en/quiromasaje-deportivo/*  /en/sports-chiromassage/  301
+/en/quiromasaje-malaga/*  /en/chiromassage-malaga/  301
+/en/quiromasaje-relajante/*  /en/relaxing-chiromassage/  301
+
+# --- fr ---
+/fr/masaje-a-domicilio/*  /fr/massage-a-domicile-costa-del-sol/  301
+/fr/masaje-cerca-de-hoteles-malaga/*  /fr/massage-pres-des-hotels-malaga/  301
+/fr/masaje-cerca-de-huelin/*  /fr/massage-pres-de-huelin-malaga/  301
+/fr/masaje-cerca-de-malaga/*  /fr/massage-pres-de-malaga/  301
+/fr/masaje-deportivo-malaga/*  /fr/massage-sportif-malaga/  301
+/fr/masaje-en-pareja-malaga/*  /fr/massage-en-couple-malaga/  301
+/fr/masaje-recuperacion-vacaciones/*  /fr/massage-recuperation-vacances/  301
+/fr/masaje-relajante-malaga/*  /fr/massage-relaxant-malaga/  301
+/fr/quiromasaje-costa-del-sol/*  /fr/chiromassage-costa-del-sol/  301
+/fr/quiromasaje-deportivo/*  /fr/chiromassage-sportif/  301
+/fr/quiromasaje-malaga/*  /fr/chiromassage-malaga/  301
+/fr/quiromasaje-relajante/*  /fr/chiromassage-relaxant/  301
+
+# --- it ---
+/it/masaje-a-domicilio/*  /it/massaggio-a-domicilio-costa-del-sol/  301
+/it/masaje-cerca-de-hoteles-malaga/*  /it/massaggio-vicino-agli-hotel-malaga/  301
+/it/masaje-cerca-de-huelin/*  /it/massaggio-vicino-a-huelin-malaga/  301
+/it/masaje-cerca-de-malaga/*  /it/massaggio-vicino-a-malaga/  301
+/it/masaje-deportivo-malaga/*  /it/massaggio-sportivo-malaga/  301
+/it/masaje-en-pareja-malaga/*  /it/massaggio-di-coppia-malaga/  301
+/it/masaje-recuperacion-vacaciones/*  /it/massaggio-recupero-vacanze/  301
+/it/masaje-relajante-malaga/*  /it/massaggio-rilassante-malaga/  301
+/it/quiromasaje-costa-del-sol/*  /it/chiromassaggio-costa-del-sol/  301
+/it/quiromasaje-deportivo/*  /it/chiromassaggio-sportivo/  301
+/it/quiromasaje-malaga/*  /it/chiromassaggio-malaga/  301
+/it/quiromasaje-relajante/*  /it/chiromassaggio-rilassante/  301
+
+# --- nl ---
+/nl/masaje-a-domicilio/*  /nl/massage-aan-huis-costa-del-sol/  301
+/nl/masaje-cerca-de-hoteles-malaga/*  /nl/massage-bij-hotels-malaga/  301
+/nl/masaje-cerca-de-huelin/*  /nl/massage-bij-huelin-malaga/  301
+/nl/masaje-cerca-de-malaga/*  /nl/massage-bij-malaga/  301
+/nl/masaje-deportivo-malaga/*  /nl/sportmassage-malaga/  301
+/nl/masaje-en-pareja-malaga/*  /nl/duomassage-malaga/  301
+/nl/masaje-recuperacion-vacaciones/*  /nl/herstelmassage-vakantie/  301
+/nl/masaje-relajante-malaga/*  /nl/ontspanningsmassage-malaga/  301
+/nl/quiromasaje-costa-del-sol/*  /nl/quiromassage-costa-del-sol/  301
+/nl/quiromasaje-deportivo/*  /nl/sport-quiromassage/  301
+/nl/quiromasaje-malaga/*  /nl/quiromassage-malaga/  301
+/nl/quiromasaje-relajante/*  /nl/ontspannende-quiromassage/  301
+
+# --- pl ---
+/pl/masaje-a-domicilio/*  /pl/masaz-z-dojazdem-costa-del-sol/  301
+/pl/masaje-cerca-de-hoteles-malaga/*  /pl/masaz-przy-hotelach-w-maladze/  301
+/pl/masaje-cerca-de-huelin/*  /pl/masaz-w-poblizu-huelin-malaga/  301
+/pl/masaje-cerca-de-malaga/*  /pl/masaz-w-poblizu-malagi/  301
+/pl/masaje-deportivo-malaga/*  /pl/masaz-sportowy-malaga/  301
+/pl/masaje-en-pareja-malaga/*  /pl/masaz-dla-par-malaga/  301
+/pl/masaje-recuperacion-vacaciones/*  /pl/masaz-regeneracyjny-wakacje/  301
+/pl/masaje-relajante-malaga/*  /pl/masaz-relaksacyjny-malaga/  301
+/pl/quiromasaje-costa-del-sol/*  /pl/masaz-leczniczy-costa-del-sol/  301
+/pl/quiromasaje-deportivo/*  /pl/masaz-leczniczy-sportowy/  301
+/pl/quiromasaje-malaga/*  /pl/masaz-leczniczy-malaga/  301
+/pl/quiromasaje-relajante/*  /pl/masaz-leczniczy-relaksacyjny/  301
+
+# --- pt ---
+/pt/masaje-a-domicilio/*  /pt/massagem-ao-domicilio-costa-del-sol/  301
+/pt/masaje-cerca-de-hoteles-malaga/*  /pt/massagem-perto-dos-hoteis-malaga/  301
+/pt/masaje-cerca-de-huelin/*  /pt/massagem-perto-de-huelin-malaga/  301
+/pt/masaje-cerca-de-malaga/*  /pt/massagem-perto-de-malaga/  301
+/pt/masaje-deportivo-malaga/*  /pt/massagem-desportiva-malaga/  301
+/pt/masaje-en-pareja-malaga/*  /pt/massagem-a-dois-malaga/  301
+/pt/masaje-recuperacion-vacaciones/*  /pt/massagem-recuperacao-ferias/  301
+/pt/masaje-relajante-malaga/*  /pt/massagem-relaxante-malaga/  301
+/pt/quiromasaje-costa-del-sol/*  /pt/quiromassagem-costa-del-sol/  301
+/pt/quiromasaje-deportivo/*  /pt/quiromassagem-desportiva/  301
+/pt/quiromasaje-malaga/*  /pt/quiromassagem-malaga/  301
+/pt/quiromasaje-relajante/*  /pt/quiromassagem-relaxante/  301
+
+# --- eventos VIP (renombrada en español, ya indexada con el slug antiguo) ---
+/eventos-masajes-vip/*  /eventos-vip-masajes-premium/  301
+
+# Landing retirada (sep 2026): si llegó a publicarse, que no dé error 404.
+/masajes-malaga/*  /  301
+/masajes-malaga  /  301
